@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BlogComponent } from './blog/blog.component';
+import { BloginputComponent } from './bloginput/bloginput.component';
+import { CalenderComponent } from './calender/calender.component';
 import { DeletediaryComponent } from './deletediary/deletediary.component';
 import { DiaryComponent } from './diary/diary.component';
 import { DiarydataComponent } from './diarydata/diarydata.component';
 import { EditdiaryComponent } from './editdiary/editdiary.component';
+import { EventComponent } from './event/event.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { QuotegeneratorComponent } from './quotegenerator/quotegenerator.component';
+import { WeatherComponent } from './weather/weather.component';
 
 const routes: Routes = [
   {
@@ -14,7 +20,12 @@ const routes: Routes = [
         { path: 'digdiary', component: DiaryComponent },
         { path: 'view', component: DiarydataComponent },
         { path: 'editdiary/:did', component: EditdiaryComponent },
-        {path:'delete/:did',component:DeletediaryComponent}
+        {path:'delete/:did',component:DeletediaryComponent},
+        {path:'calender',component:CalenderComponent},
+        {path:'event',component:EventComponent},
+        {path:'blog',component:BlogComponent},
+        {path:'bloginput',component:BloginputComponent},{path:'quotes',component:QuotegeneratorComponent},
+        {path:'weather',component:WeatherComponent},
 
       ]
   },

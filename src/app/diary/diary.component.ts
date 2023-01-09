@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common';
-import { Component, OnInit, VERSION } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ViewDataService } from '../view-data.service';
 
@@ -10,7 +10,7 @@ import { ViewDataService } from '../view-data.service';
   styleUrls: ['./diary.component.scss']
 })
 export class DiaryComponent implements OnInit {
-  name = 'Angular ' + VERSION.major;
+
 
 
   currdate: any;

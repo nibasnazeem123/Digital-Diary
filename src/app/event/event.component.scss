@@ -1,0 +1,39 @@
+.reminder-form {
+  display: flex;
+  flex-direction: column;
+
+}
+.reminder-form input[type="date"],input[type="time"] {
+  width: 200px;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.reminder-form input[type="text"] {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.reminder-form textarea {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+.reminder-form button {
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #008080;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/general.css"> -->
+</head>
+
+<body>
+    <main>
+
+
+
+
+        <section class="main grid">
+            <div class="left-col">
+                <nav class="nav-links flex column">
+
+
+
+                    <button class="post-btn flex-al-cen-jus-cen" [routerLink]="['/Home/bloginput']">
+                        <span class="tweet-text">Tweet</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="tweet-icon" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="mid-col">
+                <div *ngFor="let item of Dataarray let i=index" class="post-container">
+                    <div class="post-header">
+
+                        <div class="post-info">
+                            <div class="post-title flex"><span class="verified">Elon Musk</span> <div
+                                    class="time"></div>
+                            </div>
+                            <div class="profile-name">{{item.date}}</div>
+                        </div>
+                    </div>
+                    <div  class="post-body">
+                        <pre class="caption-text">{{item.entry}}</pre>
+                        <img class="post-content" src="images/profile-img/elon.jpg">
+                        <video class="post-content" src="" controls>Your browser doesn't support video tag.</video>
+                    </div>
+                    <!-- <div class="post-bottom flex">
+                        <div class="post-icons">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" class="post-icon" fill="none" viewBox="0 0 24 24" aria-label="Like icon"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    <title>Like</title>
+                            </svg>
+                        </div>
+                        <div class="post-icons">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" class="post-icon" fill="none" viewBox="0 0 24 24" aria-label="Share icon"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                                  <title>Share</title>
+                            </svg>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!-- Pop Ups
+    <div class="pop-up">
+        <div class="pop-up-container">
+            <form action="#" class="post-form" id="post-form" onsubmit="event.preventDefault();">
+                <div class="pop-up-head">
+                    <span class="pop-up-title">post what is on your mind</span>
+                    <button class="pop-up-cancel" onclick="post(postW)" type="reset"
+                        title="Cancel Post">&times;</button>
+                </div>
+                <div class="pop-up-body flex">
+                    <div class="post-img-container">
+                        <img src="images/profile-img/profile.jpg" class="pop-up-img" alt="$name">
+                    </div>
+                    <div class="post-field">
+                        <label for="caption">write your post in 200 letters</label>
+                        <textarea name="caption" id="caption" class="post-text" placeholder="Try Hello World!"
+                            maxlength="200" spellcheck="false"></textarea>
+                        <img src="" draggable="false" id="post-img">
+                        <video id="post-video" autoplay controls controlsList="nodownload">Your browser does not support the video tag.</video>
+
+                        <input class="animation-content" type="file" id="img" name="img"
+                            accept="image/x-png,image/gif,image/jpeg" onchange="readURL(this)">
+                        <input class="animation-content" type="file" id="video" name="video" accept="video/*">
+                    </div>
+                </div>
+                <div class="pop-up-bottom">
+                    <div class="pop-icons flex">
+                        <label class="icon-for-select" for="img"><img title="Add Image" class="pop-icon"
+                                src="images/icons_white/img.png" alt="img icon"></label>
+                        <label class="icon-for-select" for="video"><img title="Add Video" class="pop-icon"
+                                src="images/icons_white/video.png" alt="video icon"></label>
+                    </div>
+                    <button class="post" type="submit" >post</button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <!-- <script src="scripts/index.js"></script> -->
+</body>
+
+</html>

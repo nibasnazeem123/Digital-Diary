@@ -16,10 +16,26 @@ export class ViewDataService {
 
   }
 
+  inserteventedata(data: any) {
+        this.http.post("https://localhost:44308/api/Event/insEntry", data).toPromise().then(result =>
+        {
+      console.log(data); console.log(result); alert("Value Inserted Suceesfully !!");this.router.navigate(['/Home/view']); })
+
+  }
+
   getdata() {
         return this.http.get<any>('https://localhost:44308/api/Entry/viewdata')
 
       }
+
+    getRandomQuote() {
+      return this.http.get('https://api.quotable.io/random');
+    }
+
+    getcaldata() {
+          return this.http.get<any>('https://localhost:44308/api/Event/viewdata')
+
+        }
 
     getcoursebaseid(did: any) {
       return this.http.get<any>('https://localhost:44308/api/Entry/ViewdataByid/' + did)

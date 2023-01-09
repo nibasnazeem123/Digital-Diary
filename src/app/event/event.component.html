@@ -1,0 +1,14 @@
+<form class="reminder-form" [formGroup]="DiaryEntryForm">
+  <h2>Set Reminder</h2>
+  <label for="start-date">Start Date:</label>
+  <input type="date" formControlName="start" name="start-date">
+  <label for="end-date">End Date:</label>
+  <input type="date" formControlName="end" name="end-date">
+
+  <label for="subject">Subject:</label>
+  <input type="text" formControlName="title" name="subject">
+  <label for="description">Description:</label>
+  <textarea formControlName="description" name="description"></textarea>
+  <button type="submit" (click)="OnSubmit()">Submit</button>
+  <button type="button" onclick="location.href='/cancel'">Cancel</button>
+</form>

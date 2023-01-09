@@ -1,0 +1,39 @@
+<h2>hello</h2>
+
+
+<div class="pop-up">
+  <div class="pop-up-container">
+      <form action="#" class="post-form" id="post-form">
+          <div class="pop-up-head">
+              <span class="pop-up-title">post what is on your mind</span>
+              <button class="pop-up-cancel" type="reset"
+                  title="Cancel Post">&times;</button>
+          </div>
+          <div class="pop-up-body flex">
+              <div class="post-img-container">
+
+              </div>
+              <div class="post-field">
+                  <label for="caption">write your post in 200 letters</label>
+                  <textarea name="caption" id="caption" class="post-text" placeholder="Try Hello World!"
+                      maxlength="200" spellcheck="false"></textarea>
+                  <img src="" draggable="false" id="post-img">
+                  <video id="post-video" autoplay controls controlsList="nodownload">Your browser does not support the video tag.</video>
+
+                  <input class="animation-content" type="file" id="img" name="img"
+                      accept="image/x-png,image/gif,image/jpeg">
+                  <input class="animation-content" type="file" id="video" name="video" accept="video/*">
+              </div>
+          </div>
+          <div class="pop-up-bottom">
+              <div class="pop-icons flex">
+                  <label class="icon-for-select" for="img"><img title="Add Image" class="pop-icon"
+                           alt="img icon"></label>
+                  <label class="icon-for-select" for="video"><img title="Add Video" class="pop-icon"
+                           alt="video icon"></label>
+              </div>
+              <button class="post" type="submit" >post</button>
+          </div>
+      </form>
+  </div>
+</div>

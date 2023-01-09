@@ -11,7 +11,6 @@ constructor(private backendservice:ViewDataService){}
 Dataarray: any[]=[];
 ngOnInit()
 {
-  this.backendservice.getdata().subscribe((res) => {
-          this.Dataarray = res;})
+  this.backendservice.getdata().subscribe((res) => {this.Dataarray = res;})
 }
 }
