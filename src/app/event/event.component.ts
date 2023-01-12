@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
 import { ViewDataService } from '../view-data.service';
 
 @Component({
@@ -9,12 +11,22 @@ import { ViewDataService } from '../view-data.service';
 })
 export class EventComponent {
 constructor(private fb: FormBuilder,private backendservice:ViewDataService){}
+DiaryEntryForm = new FormGroup({
+  start: new FormControl('', [Validators.required]),
+  end: new FormControl('', [Validators.required]),
+  title: new FormControl('', [Validators.required]),
+  description: new FormControl(''),
 
-DiaryEntryForm = this.fb.group({start: [''],  end: [''],title: [''],description: ['']})
+});
+
+DiaryEntryForm2 = this.fb.group({start: [''],  end: [''],title: [''],description: ['']})
 
       OnSubmit() {
-      console.log(this.DiaryEntryForm.value);
+      if(this.DiaryEntryForm.valid){
+        console.log(this.DiaryEntryForm.value);
       this.backendservice.inserteventedata(this. DiaryEntryForm.value)
+     }
+
         }
 
       ngOnInit():void {}

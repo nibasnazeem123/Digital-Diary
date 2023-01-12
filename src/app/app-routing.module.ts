@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlogComponent } from './blog/blog.component';
 import { BloginputComponent } from './bloginput/bloginput.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 import { CalenderComponent } from './calender/calender.component';
 import { DeletediaryComponent } from './deletediary/deletediary.component';
 import { DiaryComponent } from './diary/diary.component';
@@ -10,6 +11,7 @@ import { EditdiaryComponent } from './editdiary/editdiary.component';
 import { EventComponent } from './event/event.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { QuotegeneratorComponent } from './quotegenerator/quotegenerator.component';
+import { VieweventComponent } from './viewevent/viewevent.component';
 import { WeatherComponent } from './weather/weather.component';
 
 const routes: Routes = [
@@ -26,6 +28,8 @@ const routes: Routes = [
         {path:'blog',component:BlogComponent},
         {path:'bloginput',component:BloginputComponent},{path:'quotes',component:QuotegeneratorComponent},
         {path:'weather',component:WeatherComponent},
+        {path:'calculator',component:CalculatorComponent},
+        {path:'viewevent',component:VieweventComponent}
 
       ]
   },

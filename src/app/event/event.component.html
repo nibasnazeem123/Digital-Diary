@@ -1,7 +1,10 @@
-<form class="reminder-form" [formGroup]="DiaryEntryForm">
+<form class="reminder-form" [formGroup]="DiaryEntryForm" [formGroup]="DiaryEntryForm2" >
   <h2>Set Reminder</h2>
   <label for="start-date">Start Date:</label>
   <input type="date" formControlName="start" name="start-date">
+  <div *ngIf="DiaryEntryForm.controls['start'].invalid && (DiaryEntryForm.controls['start'].touched || DiaryEntryForm.controls['start'])">
+    <div *ngIf="DiaryEntryForm.controls['start']">Start Date is required</div>
+  </div>
   <label for="end-date">End Date:</label>
   <input type="date" formControlName="end" name="end-date">
 

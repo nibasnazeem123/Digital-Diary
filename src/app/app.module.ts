@@ -22,6 +22,8 @@ import { BlogComponent } from './blog/blog.component';
 import { BloginputComponent } from './bloginput/bloginput.component';
 import { QuotegeneratorComponent } from './quotegenerator/quotegenerator.component';
 import { WeatherComponent } from './weather/weather.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { VieweventComponent } from './viewevent/viewevent.component';
 
 
 
@@ -39,6 +41,8 @@ import { WeatherComponent } from './weather/weather.component';
     BloginputComponent,
     QuotegeneratorComponent,
     WeatherComponent,
+    CalculatorComponent,
+    VieweventComponent,
 
 
 
